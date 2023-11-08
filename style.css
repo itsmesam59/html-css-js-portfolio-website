@@ -160,7 +160,7 @@ section {
     display: flex;
 }
 
-/* PROFILE */
+/* PROFILE SECTION */
 
 #profile {
     display: flex;
@@ -190,7 +190,7 @@ section {
 }
 
 .section__text__p2 {
-    font-size: 3rem;
+    font-size: 1.75rem;
     margin-bottom: 1rem;
 }
 
