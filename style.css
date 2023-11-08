@@ -206,6 +206,23 @@ section {
     gap: 1rem;
 }
 
+.home-imgHover {
+    position: absolute;
+    top: 10;
+    left: 350px;
+    width: 405px;
+    height: 55%;
+    border-radius: 100%;
+    margin-top: 5.4%;
+    background: transparent;
+    transition: 3s;
+}
+
+.home-imgHover:hover {
+    background: white;
+    opacity: .8;
+}
+
 /* ICONS */
 
 .icon {
@@ -313,6 +330,26 @@ section {
     width: 400px;
     margin: auto 0;
 }
+
+.about-imgHover {
+    position: absolute;
+    top: 50;
+    left: 325px;
+    width: 400px;
+    height: 55%;
+    margin-top: -39%;
+    margin-left: -27%;
+    border-radius: 10%;
+    background: transparent;
+    transition: 3s;
+}
+
+.about-imgHover:hover {
+    background: white;
+    opacity: .8;
+}
+
+
 
 /* EXPERIENCE SECTION*/
 
