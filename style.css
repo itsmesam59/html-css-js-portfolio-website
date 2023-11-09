@@ -16,7 +16,7 @@ html {
 }
 
 p {
-    color: rgb(85,85,85);
+    color: rgb(85,85,85);  /*rgb(85,85,85)*/
 }
 
 /* TRANSITION */
@@ -40,6 +40,7 @@ nav {
 }
 
 .nav-links {
+    position: relative;
     gap: 2rem;
     list-style: none;
     font-size: 1.5rem;
@@ -61,6 +62,11 @@ a:hover {
 .logo {
     position: relative;
     font-size: 2rem;
+    font-weight: 600;
+}
+
+.logo:hover {
+    cursor: default;
 }
 
 .logo::before {
@@ -75,16 +81,17 @@ a:hover {
     animation-delay: .4s;
 }
 
-.logo:hover {
-    cursor: default;
+.nav-links a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2.5s;
 }
-
-@keyframes showRight {
-    100% {
-        width: 0;
-    }
-}
-
 /* HAMBURGER MENU */
 
 #hamburger-nav {
@@ -212,6 +219,7 @@ section {
 .section__text__p2 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
+
 }
 
 .title {
@@ -221,6 +229,7 @@ section {
 }
 
 #socials-container {
+    position: relative;
     display: flex;
     justify-content: center;
     margin-top: 1rem;
@@ -244,6 +253,19 @@ section {
     opacity: .8;
 }
 
+.home-imgHover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2.5s;
+    z-index: 2;
+}
+
 .section__text .section__text__p1::before{
     content: '';
     position: absolute;
@@ -264,7 +286,7 @@ section {
     height: 100%;
     background: white;
     animation: showRight 1s ease forwards;
-    animation-delay: 1.8s;
+    animation-delay: 1.3s;
 }
 
 .section__text .title::before {
@@ -276,7 +298,20 @@ section {
     height: 100%;
     background: white;
     animation: showRight 1s ease forwards;
-    animation-delay: 1.6s;
+    animation-delay: 1s;
+}
+
+#socials-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.9s;
+    z-index: 2;
 }
 
 /* ICONS */
@@ -289,9 +324,11 @@ section {
 /* BUTTONS */
 
 .btn-container {
+    position: relative;
     display: flex;
     justify-content: center;
     gap: 1rem;
+    z-index: 1;
 }
 
 .btn {
@@ -330,8 +367,17 @@ section {
     border: rgb(255,255,255) 0.1rem solid; 
 }
 
-.btn-container {
-    gap: 1rem;
+.btn-color1,.btn-color-2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.6s;
+    z-index: 2;
 }
 
 /* ABOUT SECTION */
@@ -522,4 +568,12 @@ footer {
 
 footer p {
     text-align: center;
+}
+
+/* KEYFRAMES ANIMATION */
+
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
 }
