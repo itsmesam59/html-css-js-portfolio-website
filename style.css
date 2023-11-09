@@ -397,6 +397,10 @@ section {
     flex-direction: column;
 }
 
+.about-details-container .text-container {
+    font-size:larger;
+}
+
 .about-containers,
 .about-details-container {
     display: flex;
