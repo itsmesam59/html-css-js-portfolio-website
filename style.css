@@ -59,11 +59,30 @@ a:hover {
 }
 
 .logo {
+    position: relative;
     font-size: 2rem;
+}
+
+.logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
 }
 
 .logo:hover {
     cursor: default;
+}
+
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
 }
 
 /* HAMBURGER MENU */
@@ -182,6 +201,7 @@ section {
 }
 
 .section__text p {
+    position: relative;
     font-weight: 600;
 }
 
@@ -195,6 +215,7 @@ section {
 }
 
 .title {
+    position: relative;
     font-size: 3rem;
     text-align: center;
 }
@@ -221,6 +242,41 @@ section {
 .home-imgHover:hover {
     background: white;
     opacity: .8;
+}
+
+.section__text .section__text__p1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+}
+.section__text .section__text__p2::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.8s;
+}
+
+.section__text .title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.6s;
 }
 
 /* ICONS */
