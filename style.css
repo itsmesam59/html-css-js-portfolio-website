@@ -9,7 +9,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: #72C25E;
+    background: #20BCBA;
 }
 
 html {
@@ -17,7 +17,7 @@ html {
 }
 
 p {
-    color: #F2F1E7;  /*rgb(85,85,85)*/
+    color: #EEE8A9;  /*rgb(85,85,85)*/
 }
 
 /* TRANSITION */
@@ -77,7 +77,7 @@ a:hover {
     right: 0;
     width: 100%;
     height: 100%;
-    background: #72C25E;
+    background: #20BCBA;
     animation: showRight 1s ease forwards;
     animation-delay: .4s;
 }
@@ -89,7 +89,7 @@ a:hover {
     right: 0;
     width: 100%;
     height: 100%;
-    background: #72C25E;
+    background: #20BCBA;
     animation: showRight 1s ease forwards;
     animation-delay: 2.5s;
 }
@@ -124,7 +124,7 @@ a:hover {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: #72C25E;
+    background-color: #20BCBA;
     width: fit-content;
     max-height: 0;
     overflow: hidden;
@@ -250,7 +250,7 @@ section {
 }
 
 .home-imgHover:hover {
-    background: #72C25E;
+    background: #20BCBA;
     opacity: .8;
 }
 
@@ -261,7 +261,7 @@ section {
     right: 0;
     width: 100%;
     height: 100%;
-    background: #72C25E;
+    background: #20BCBA;
     animation: showRight 1s ease forwards;
     animation-delay: 2.5s;
     z-index: 2;
@@ -274,7 +274,7 @@ section {
     right: 0;
     width: 100%;
     height: 100%;
-    background: #72C25E;
+    background: #20BCBA;
     animation: showRight 1s ease forwards;
     animation-delay: 1s;
 }
@@ -285,7 +285,7 @@ section {
     right: 0;
     width: 100%;
     height: 100%;
-    background: #72C25E;
+    background: #20BCBA;
     animation: showRight 1s ease forwards;
     animation-delay: 1.3s;
 }
@@ -297,7 +297,7 @@ section {
     right: 0;
     width: 100%;
     height: 100%;
-    background: #72C25E;
+    background: #20BCBA;
     animation: showRight 1s ease forwards;
     animation-delay: 1s;
 }
@@ -309,7 +309,7 @@ section {
     right: 0;
     width: 100%;
     height: 100%;
-    background: #72C25E;
+    background: #20BCBA;
     animation: showRight 1s ease forwards;
     animation-delay: 1.9s;
     z-index: 2;
@@ -375,7 +375,7 @@ section {
     right: 0;
     width: 100%;
     height: 100%;
-    background: #72C25E;
+    background: #20BCBA;
     animation: showRight 1s ease forwards;
     animation-delay: 1.6s;
     z-index: 2;
@@ -455,9 +455,9 @@ section {
     background: transparent;
     transition: 3s;
 }
-
+    
 .about-imgHover:hover {
-    background: #72C25E;
+    background: #20BCBA;
     opacity: .8;
 }
 
